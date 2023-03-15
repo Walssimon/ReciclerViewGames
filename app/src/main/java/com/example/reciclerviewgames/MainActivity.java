@@ -21,6 +21,6 @@ public class MainActivity extends AppCompatActivity {
         lstGames.add(
                 new Games("God of War", "Simulador de Pai e Filho", "R$80,00",R.drawable.godofwar)
         );
-        MyAdapter adapter = new MyAdapter(getApplicationContext(),);
+        MyAdapter adapter = new MyAdapter(getApplicationContext(),lstGames);
     }
 }
