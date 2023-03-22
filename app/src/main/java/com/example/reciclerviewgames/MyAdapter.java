@@ -1,6 +1,7 @@
 package com.example.reciclerviewgames;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,5 +63,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             idCardGames = itemView.findViewById(R.id.idCardGames);
         }
     }
+    @Override
+    public void onClick(View v) {
+        Intent intent = new Intent(Mcontexto, ApresentaGamesActivity, Class);
+        Intent.putExtra
+    }
 
-}
+ }
+
