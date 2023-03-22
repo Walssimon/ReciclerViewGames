@@ -29,9 +29,12 @@ public class MainActivity extends AppCompatActivity {
                 new Games("God of War", "Simulador de Pai e Filho", "R$80,00", R.drawable.godofwar)
         );
         MyAdapter adapter = new MyAdapter(getApplicationContext(), lstGames);
+
         idRecycleView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
 
         idRecycleView.setHasFixedSize(true);
+
+        idRecycleView.setAdapter(adapter);
     }
 
 }

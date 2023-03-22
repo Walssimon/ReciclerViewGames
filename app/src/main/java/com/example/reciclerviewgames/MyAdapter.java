@@ -16,30 +16,38 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-    private Context Mcontext;
-    private List<Games> ListGames;
+    private Context Mcontexto;
+    private List<Games> LstGames;
 
-    public MyAdapter(Context mcontext, List<Games> listGames) {
-        Mcontext = mcontext;
-        ListGames = listGames;
+    public MyAdapter(Context Mcontexto, List<Games> lstGames) {
+        this.Mcontexto = Mcontexto;
+        this.LstGames = lstGames;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
-    }
 
 
+
+    View view;
+
+    LayoutInflater inflater = LayoutInflater.from(Mcontexto);
+    view=inflater.inflate(R.layout.modelogames,parent,false);
+
+        return new ViewHolder(view);
+
+
+}
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.txtTitulo.setText(ListGames.get(position).getTitulo());
-        holder.idImgGames.setImageResource(ListGames.get(position).getImagem());
+        holder.txtTitulo.setText(LstGames.get(position).getTitulo());
+        holder.idImgGames.setImageResource(LstGames.get(position).getImagem());
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return LstGames.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

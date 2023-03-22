@@ -12,7 +12,7 @@
         android:theme="@style/Theme.ReciclerViewGames"
         tools:targetApi="31">
         <activity
-            android:name=".ApresentarFilmeActivity"
+            android:name=".ApresentaGamesActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

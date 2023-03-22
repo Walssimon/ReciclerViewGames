@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ApresentarFilmeActivity extends AppCompatActivity {
+public class ApresentaGamesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.apresentar_filme_layout);
+        setContentView(R.layout.apresenta_games_layout);
     }
 }
